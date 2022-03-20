@@ -1,0 +1,25 @@
+.testimonial_section {
+  padding-bottom: 0;
+}
+.section {
+  position: relative;
+  margin-top: 2rem;
+}
+.section > img {
+  width: 100%;
+  object-fit: cover;
+}
+.carousel {
+  overflow: hidden;
+  height: 28rem;
+  width: 40rem;
+  background: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  background: var(--white);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}

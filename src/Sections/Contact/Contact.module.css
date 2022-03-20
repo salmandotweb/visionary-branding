@@ -1,0 +1,8 @@
+.contact_us {
+  padding: 0 10rem 5rem 10rem;
+  display: flex;
+  align-items: flex-start;
+}
+.left {
+  margin-right: 5rem;
+}

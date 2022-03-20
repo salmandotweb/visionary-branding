@@ -1,0 +1,7 @@
+.work_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 35rem);
+  grid-auto-rows: auto;
+  align-content: space-around;
+  justify-content: space-between;
+}
