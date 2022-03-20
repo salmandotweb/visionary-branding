@@ -6,3 +6,59 @@
 .left {
   margin-right: 5rem;
 }
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-right: 2rem;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sendBtn {
+  background-image: linear-gradient(to right, #ff698d, #fb3f6c);
+  color: var(--white);
+  font-weight: 500;
+  border: 0.3rem solid var(--white);
+  margin-top: 2rem;
+}
+.right {
+  width: 100%;
+}
+.right input,
+.right textarea {
+  font-family: inherit;
+  border: none;
+  background: #fff8f8;
+  padding: 2rem 2rem;
+  resize: none;
+  width: 100%;
+  border-radius: 0.4rem;
+}
+.right label {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.name,
+.container,
+.message {
+  padding: 1rem 0;
+}
+.container > label {
+  margin-bottom: 5rem !important;
+}
