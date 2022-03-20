@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99999;
+}
+.logo {
+  font-style: italic;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+.logo > span {
+  color: var(--red);
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.links > li {
+  padding: 1rem 1.5rem;
+}
+.links > li > a {
+  color: var(--grey);
+  font-size: 1.6rem;
+  transition: 200ms all;
+}
+.links > li > a:hover {
+  color: var(--red);
+}
+.toggleBtn {
+  border: none;
+  background: none;
+  color: var(--orange);
+  font-size: 3rem;
+  display: none;
+}
+.closeBtn {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255, 0);
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  backdrop-filter: blur(0.5rem);
+  display: none;
+}
+
+@media screen and (max-width: 1060px) {
+  .toggleBtn {
+    display: block;
+  }
+  .links {
+    position: fixed;
+    background: var(--dark-blue);
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 99999;
+    flex-direction: column;
+    min-width: 25rem;
+    transition: all 250ms ease;
+    transform: translateX(100%);
+  }
+  .links > li > a {
+    font-size: 1.8rem;
+  }
+  .active {
+    transform: translateX(0);
+  }
+  .closeBtn {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    border: none;
+    background: none;
+    color: var(--orange);
+    font-size: 3rem;
+  }
+  .overlay {
+    display: block;
+  }
+}
+@media screen and (max-width: 454px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+  .closeBtn > svg,
+  .toggleBtn > svg {
+    font-size: 2.2rem;
+  }
+}

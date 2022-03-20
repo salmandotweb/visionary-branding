@@ -1,0 +1,9 @@
+.img_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.img_container > img {
+  max-width: 100%;
+}
