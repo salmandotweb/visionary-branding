@@ -5,3 +5,16 @@
   align-content: space-around;
   justify-content: space-between;
 }
+@media screen and (max-width: 838px) {
+  .work_section {
+    justify-content: center;
+  }
+  .work_section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .see_more {
+    margin-bottom: 2rem;
+  }
+}

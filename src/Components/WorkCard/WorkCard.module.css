@@ -16,3 +16,8 @@
   font-weight: 600;
   margin: 1rem 0;
 }
+@media screen and (max-width: 375px) {
+  .img_container {
+    width: 100%;
+  }
+}

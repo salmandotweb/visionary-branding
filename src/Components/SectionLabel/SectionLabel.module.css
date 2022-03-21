@@ -13,3 +13,19 @@
   color: var(--dark-blue);
   margin: 1.5rem 0;
 }
+@media screen and (max-width: 425px) {
+  .section_label > p {
+    font-size: 1.4rem;
+  }
+  .section_label > h1 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 365px) {
+  .section_label > p {
+    font-size: 1.4rem;
+  }
+  .section_label > h1 {
+    font-size: 2.4rem;
+  }
+}

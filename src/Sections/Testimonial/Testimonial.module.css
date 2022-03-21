@@ -23,3 +23,37 @@
   border-radius: 0.5rem;
   padding: 2rem;
 }
+@media screen and (max-width: 932px) {
+  .section > img {
+    display: none;
+  }
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 23rem;
+  }
+  .testimonial_section {
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 705px) {
+  .carousel {
+    height: 26rem;
+  }
+}
+@media screen and (max-width: 463px) {
+  .carousel {
+    height: 28rem;
+  }
+}
+@media screen and (max-width: 433px) {
+  .carousel {
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .carousel {
+    height: 34rem;
+    width: 33rem;
+  }
+}
