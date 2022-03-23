@@ -53,7 +53,9 @@ const Navbar = () => {
             <a href="/">Contact Us</a>
           </li>
           <li>
-            <button className="btn btn_color">Let's Talk</button>
+            <button className={`btn btn_color ${classes.letsBtn}`}>
+              Let's Talk
+            </button>
           </li>
 
           <button onClick={toggleNav} className={`btn ${classes.closeBtn}`}>

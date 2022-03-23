@@ -51,6 +51,10 @@
   backdrop-filter: blur(0.5rem);
   display: none;
 }
+.letsBtn:hover {
+  color: var(--white);
+  background-image: linear-gradient(to right, #ff698d, #fb3f6c);
+}
 
 @media screen and (max-width: 1060px) {
   .toggleBtn {

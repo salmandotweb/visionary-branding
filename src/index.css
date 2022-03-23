@@ -48,6 +48,7 @@ code {
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--dark-blue);
+  transition: 200ms all;
 }
 .btn:active {
   transform: scale(0.98);
@@ -81,6 +82,8 @@ code {
     padding: 3rem 2rem;
   }
 }
-.horizontalSlider___281Ls {
-  overflow: visible !important;
+@media screen and (max-width: 320px) {
+  .horizontalSlider___281Ls {
+    overflow: visible !important;
+  }
 }
