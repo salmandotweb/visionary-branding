@@ -38,6 +38,10 @@
   margin: 0 1rem;
   font-weight: 200;
   cursor: pointer;
+  transition: 250ms all;
+}
+.links > p:hover {
+  color: var(--red);
 }
 .social_links {
   display: flex;
@@ -80,6 +84,12 @@
 @media screen and (max-width: 417px) {
   .footer {
     padding: 3rem 2rem;
+  }
+  .copyright {
+    font-size: 1.4rem;
+  }
+  .links > p {
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 320px) {

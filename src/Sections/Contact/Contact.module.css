@@ -35,6 +35,10 @@
   font-weight: 500;
   border: 0.3rem solid var(--white);
   margin-top: 2rem;
+  transition: 250ms all;
+}
+.sendBtn:hover {
+  border: 0.3rem solid var(--red);
 }
 .right {
   width: 100%;

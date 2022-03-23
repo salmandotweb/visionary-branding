@@ -52,12 +52,20 @@
   color: var(--white);
   font-weight: 500;
   border: 0.3rem solid var(--white);
+  transition: 250ms all;
+}
+.startedBtn:hover {
+  border: 0.3rem solid var(--red);
 }
 .videoBtn {
   border: none;
   display: flex;
   align-items: center;
   font-weight: 500;
+  transition: 250ms all;
+}
+.videoBtn:hover {
+  color: var(--red);
 }
 .videoBtn > svg {
   margin-right: 0.5rem;

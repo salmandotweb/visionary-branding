@@ -38,6 +38,11 @@
   font-weight: 500;
   border: 0.1rem solid var(--white);
   padding: 1.5rem 3rem;
+  transition: 250ms all;
+}
+.startedBtn:hover {
+  background: var(--dark-blue);
+  border: 0.1rem solid var(--red);
 }
 @media screen and (max-width: 1024px) {
   .why_section {

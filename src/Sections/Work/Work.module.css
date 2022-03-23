@@ -5,6 +5,12 @@
   align-content: space-around;
   justify-content: space-between;
 }
+.see_moreBtn {
+  transition: 250ms all;
+}
+.see_moreBtn:hover {
+  color: var(--red);
+}
 @media screen and (max-width: 838px) {
   .work_section {
     justify-content: center;

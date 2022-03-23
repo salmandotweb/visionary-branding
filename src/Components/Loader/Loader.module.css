@@ -23,7 +23,7 @@
 }
 
 .loader-black {
-  background-color: var(--dark-blue);
+  background-color: var(--red);
 }
 
 .loader-1 {
@@ -58,7 +58,7 @@
   content: "";
 }
 .loader2:before {
-  border: 1px solid var(--dark-blue);
+  border: 1px solid var(--red);
   top: -1px;
   left: -1px;
   opacity: 0;
@@ -81,7 +81,7 @@
 }
 
 .loader2:after {
-  background-color: var(--dark-blue);
+  background-color: var(--red);
   animation-name: loader2-2;
 }
 
