@@ -3,12 +3,18 @@ import Navbar from "../../Components/Navbar/Navbar";
 import classes from "./Home.module.css";
 import { BiBadgeCheck } from "react-icons/bi";
 import { AiFillPlayCircle, AiFillStar } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <section className={`home_section ${classes.home}`}>
       <Navbar />
-      <div className={classes.content}>
+      <motion.div
+        className={classes.content}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
         <div className={classes.left}>
           <div className={classes.award}>
             <BiBadgeCheck />
@@ -60,7 +66,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

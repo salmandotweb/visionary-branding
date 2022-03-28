@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import SectionLabel from "../../Components/SectionLabel/SectionLabel";
 import DatePicker from "react-datepicker";
 import classes from "./Contact.module.css";
@@ -6,11 +9,28 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const Contact = () => {
   const [startDate, setStartDate] = useState(new Date());
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+  const animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        transition: {
+          duration: 0.8,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({ opacity: 0 });
+    }
+  }, [inView]);
   return (
     <section className={`section ${classes.contact_us}`}>
-      <div className={classes.left}>
+      <motion.div className={classes.left} ref={ref} animate={animation}>
         <img src="images/contact-image.png" alt="" />
-      </div>
+      </motion.div>
       <form type="submit" className={classes.right}>
         <SectionLabel tagline="Contact Us" title="Let’s Collaborate Now!" />
         <div className={classes.name}>
